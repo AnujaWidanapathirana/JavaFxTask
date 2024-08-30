@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="549.0" prefWidth="819.0" style="-fx-background-color: #6C4E31;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisplayToDotaskForm">
+   <children>
+      <Pane layoutX="7.0" layoutY="7.0" prefHeight="536.0" prefWidth="805.0" style="-fx-background-color: FFDBB5;">
+         <children>
+            <ButtonBar layoutX="423.0" layoutY="318.0" prefHeight="40.0" prefWidth="66.0" />
+            <VBox fx:id="vBloxLeft" layoutX="33.0" layoutY="115.0" prefHeight="321.0" prefWidth="352.0" style="-fx-background-color: #C08261;">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="97.0" text="To_Do:" textFill="#181818">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="vBloxRight" layoutX="391.0" layoutY="115.0" prefHeight="321.0" prefWidth="352.0" style="-fx-background-color: #C08261;">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="97.0" text="Dusted:" textFill="#181818">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXButton fx:id="popaddtask" layoutX="43.0" layoutY="474.0" onAction="#poptaskWindow" prefHeight="25.0" prefWidth="301.0" style="-fx-background-color: #A67B5B;" text="+Add Task" />
+            <Label layoutX="187.0" layoutY="14.0" prefHeight="57.0" prefWidth="431.0" text="Task Manager">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
